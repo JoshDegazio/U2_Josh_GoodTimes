@@ -1,0 +1,28 @@
+﻿<Window x:Class="U2_Josh_GoodTimes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:U2_Josh_GoodTimes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <!-- All visible elements. -->
+        <TextBox x:Name="txt_Input"
+                 Text="Input time values here, using the military format."
+                 FontSize="18"
+                 />
+        <TextBlock x:Name="txt_RunDesc"
+                   Text="Click below to sum and apply tax to all values entered."
+                   />
+        <Button x:Name="btn_Run"
+                Click="click_Run"
+                Content="Run"
+                FontSize="24"
+                />
+        <TextBlock x:Name="txt_Output"
+                   Text="Your values will be outputed here."
+                   FontSize="18"
+                   />
+    </StackPanel>
+</Window>
